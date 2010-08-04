@@ -51,7 +51,7 @@ function sa_admin_options(){
 	/*
 	 * handle post
 	 */
-	if(mfa_post("do")=="update"){
+	if(sa_post("do")=="update"){
 		foreach ($adid as $id)
 			$texts[$id]=sa_post($id);
 		update_option('simple-adsense',$texts);

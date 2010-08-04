@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Simple Adsense
  * Plugin URI: http://www.webfish.se/wp/plugins/simple-adsense
- * Version: 1.0
+ * Version: 1.0.1
  * Description: Adds user defined texts. Write [adsense_id=1], call the getSimpleAdsene($id) function or use the widget.
  * Author: Tobias Nyholm
  * Author URI: http://www.tnyholm.se
