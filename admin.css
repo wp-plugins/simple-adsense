@@ -1,0 +1,34 @@
+/*
+    This file is part of Simple Adsense.
+
+    Simple Adsense is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Simple Adsense is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Simple Adsense.  If not, see <http://www.gnu.org/licenses/>.
+
+ */
+
+#sa_admin .success{
+	background-color:#ccffcc;
+	border:1px solid green;
+	margin-left:25px;
+}
+
+#sa_admin textarea{
+	width:400px;
+	height: 200px;
+	margin-bottom:20px;
+}
+
+#sa_admin table td{
+	padding-right: 40px;
+	font-weight:bold;
+}
