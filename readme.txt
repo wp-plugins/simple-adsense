@@ -28,3 +28,6 @@ This is some brief installation notes. For more information see [Webfish](http:/
 
 The frequently asked questions is updated at the plugin's homepage [Simple Adsense](http://www.webfish.se/wp/plugins/simple-adsense#FAQ "Webfish - Wordpress plugin"). 
 
+== ChangeLog ==
+
+You will find the change log at [Webfish](http://www.webfish.se/wp/plugins/simple-adsense#Changelog "Webfish - Simple Adsense changelog")
