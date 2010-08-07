@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Simple Adsense
  * Plugin URI: http://www.webfish.se/wp/plugins/simple-adsense
- * Version: 1.0.2
- * Description: Adds user defined texts. Write [adsense_id=1], call the getSimpleAdsene($id) function or use the widget.
+ * Version: 1.0.3
+ * Description: Adds user defined texts. Write [adsense_id=1], call the getSimpleAdsense($id) function or use the widget.
  * Author: Tobias Nyholm
  * Author URI: http://www.tnyholm.se
  * License: GPLv3
@@ -96,7 +96,7 @@ class simple_adsense_widget extends WP_Widget {
 		extract($args);
 		$title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title']);
 		
-		$ad=getSimpleAdsene($instance['adsenseid']);
+		$ad=getSimpleAdsense($instance['adsenseid']);
 		
 		if($ad!==false){
 		echo $before_widget;
@@ -128,10 +128,15 @@ class simple_adsense_widget extends WP_Widget {
 		$title = strip_tags($instance['title']);
 		$adsenseid= strip_tags($instance['adsenseid']);
 ?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>">Title:</label>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>">Title: (optional)</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 		<p><label for="<?php echo $this->get_field_id('adsenseid'); ?>">Adsense id:</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('adsenseid'); ?>" name="<?php echo $this->get_field_name('adsenseid'); ?>" type="text" value="<?php echo esc_attr($adsenseid); ?>" /></p>
+		<select class="widefat" id="<?php echo $this->get_field_id('adsenseid'); ?>" name="<?php echo $this->get_field_name('adsenseid'); ?>">
+		<?php for($i=1;$i<=6;$i++):?>
+			<option value="<?php echo $i?>" <?php if(esc_attr($adsenseid)==$i) echo "selected"?>><?php echo $i;?></option>
+		<?php endfor;?>
+		</select>
+		</p>
 <?php
 	}
 }
