@@ -11,7 +11,7 @@ Gives you the possiblitity to add your ad-code anywhere. This is a simple plugin
 == Description ==
 This plugin is far from fancy. I created this because I could not stand the big complex adsense plugins that
 exists today. This one is small, simple and does the work. It gives you six textboxes where you can write anyting, like ad-codes.
-Then can you display the contents of such box with a widget, a function call och just type `[adsense_id="1"]`
+Then you can display the contents of such box with a widget, a function call och just type `[adsense_id="1"]`
 in the editor. For more information see installation page or the 
 [Webfish](http://www.webfish.se/wp/plugins/simple-adsense "Webfish - Wordpress plugin") homepage.
 
